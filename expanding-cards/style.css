@@ -39,6 +39,7 @@ body {
 
 .image-container.active {
     flex: 10;
+    /* flex-basis: auto; */ /*see the mdn for better understanding*/
 
 }
 
