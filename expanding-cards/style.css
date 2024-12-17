@@ -8,15 +8,20 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    /*no need to make the outer container as flex in order to have the inner one in the middle, I can achieve the same thing by using align-content property however the flex-wrap property should exist in-order to use this, otherwise it won't work at all */
 }
 
 .container {
     width: 90vw;
     display: flex;
     gap: 2rem;
+    align-content: center;
+    flex-wrap: wrap; /*this is neccessary to use align-content property*/
+    height: 100%;
+    margin: 0 auto;
 
 }
 
@@ -37,7 +42,7 @@ body {
 
 }
 
-.image-container>h3 {
+.image-container > h3 {
     position: absolute;
     bottom: 20px;
     color: white;
