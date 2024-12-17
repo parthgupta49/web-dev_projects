@@ -1,1 +1,1 @@
-# Web-Dev Fun Small projects
+# Web-Dev Fun projects
